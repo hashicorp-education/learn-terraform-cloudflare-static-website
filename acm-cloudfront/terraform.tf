@@ -2,15 +2,17 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "4.0.0"
+      version = "~> 5.22.0"
     }
     cloudflare = {
       source  = "cloudflare/cloudflare"
-      version = "2.19.2"
+      version = "~> 4.17.0"
     }
     random = {
       source  = "hashicorp/random"
-      version = "3.1.0"
+      version = "~> 3.5.1"
     }
   }
+
+  required_version = "~> 1.2"
 }
